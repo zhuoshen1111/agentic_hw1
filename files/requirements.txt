@@ -1,0 +1,12 @@
+# The OpenAI Agents SDK. Pinned: the course's examples and the serialised run
+# state in Part 6 are version-specific, and 0.22.0 is what the lecture used.
+openai-agents==0.22.0
+
+pydantic>=2.7
+pytest>=8.0
+# Parts 5 onward run the SDK, which is async. This lets pytest await it.
+pytest-asyncio>=0.24
+
+# Part 9 only, to reach a model over HTTP. Parts 1-8 need no network.
+openai>=1.60
+python-dotenv>=1.0.0
